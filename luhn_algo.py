@@ -12,10 +12,7 @@ for i in range(16):
                 nums[i] = int(t[0]) + int(t[1])
             else:
                 break
-ttc = 0
-for k in nums:
-    ttc+=k
-if ttc%10 == 0:
+if sum(nums)%10 == 0:
     print("valid")
 else:
     print("invalid")
